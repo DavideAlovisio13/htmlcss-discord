@@ -14,7 +14,7 @@ body {
     background-color: var(--color-secondary);
     color: var(--color-primary);
 }
-    :root {
+:root {
 	--color-secondary: #ffffff;
 	--color-primary: #23272a;
 	--color-header-bg: #255ee9;
@@ -23,20 +23,41 @@ body {
 }
 .container {
     max-width: 1200px;
+    padding: 30px;
     margin: 0 auto;
-    padding: 10px;
     border: 2px solid black;
+}
+#jumbotron{
+    text-align: center;
+    padding: 70px;
+     background-image: url(../img/img/jumbo.png);
+    background-size: cover;
+    min-height: 400px;
 }
 /* header */
 header {
     background-color: var(--color-header-bg);
     color: var(--color-secondary);
 }
+header-bg {
+    background-image: url(../img/img/jumbo.png);
+}
+#jumbotron{
+    text-align: center;
+    padding: 70px;
+     background-image: url(../img/img/jumbo.png);
+    background-size: cover;
+    min-height: 400px;
+}
 
 /* main */
 .grey-bg {
     background-color: var(--color-section-bg);
 }
+.img-main{
+    width: 30%;
+}
+
 
 /* footer */
 footer {
@@ -44,3 +65,13 @@ footer {
     color: var(--color-secondary);
 }
 
+/* flex */
+.display-flex{
+    display: flex;
+}
+.flex-direction{
+    flex-direction: row;
+}
+.space-between{
+    justify-content: space-between;
+}
