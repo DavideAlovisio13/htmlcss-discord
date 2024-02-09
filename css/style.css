@@ -55,7 +55,10 @@ header-bg {
     background-color: var(--color-section-bg);
 }
 .img-main{
-    width: 30%;
+    width: 50%;
+}
+.text-main{
+    width: 50%;
 }
 
 
@@ -74,4 +77,11 @@ footer {
 }
 .space-between{
     justify-content: space-between;
+}
+.align-items-cont {
+    align-items: center;
+    align-content: center;
+}
+.flex-direction-rev{
+    flex-direction: row-reverse;
 }
