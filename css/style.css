@@ -15,7 +15,7 @@ ul {
     --color-primary: #23272a;
     --color-header-bg: #255ee9;
     --color-section-bg: #f6f6f6;
-    --color-contrast: #aebbe7;
+    --color-contrast: #7289DA;
 }
 
 body {
@@ -24,111 +24,113 @@ body {
     color: var(--color-primary);
 }
 
-/* header */
-header {
-    background-color: var(--color-header-bg);
-    color: var(--color-secondary);
-}
-
-#hero {
-    background-image: url(../img/img/jumbo.png);
-    min-height: 350px;
-    background-size: cover;
-    background-position: center;
-}
-
-header p,
-nav {
-    padding-top: 20px;
-}
-
-.botheader {
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-/* main */
-.section-bg {
-    background-color: var(--color-section-bg);
-}
-
-.left {
-    width: 60%;
-}
-
-.left img {
-    width: 100%;
-}
-
-.right {
-    width: 40%;
-    padding: 3%;
-}
-
 h1,
 h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-.inverted-wave {
-    width: 100%;
-}
-.inverted-wave img {
-    width: 100%;
-    filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
-    transform: rotate(180deg);
-}
-.wave {
-    width: 100%;
-    line-height: 0;
-}
-.wave img {
-    width: 100%;
-    filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
-    display: block;
-    vertical-align: bottom;
+
+/* links */
+a {
+    text-decoration: none;
 }
 
-#calltoaction {
-    background-image: url(../img/img/stars.svg);
-    width: fit-content;
-    margin: 1px auto;
-    padding: 23px 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#community {
-    position: relative;
+.a-black {
+    color: var(--color-primary);
 }
 
-
-/* footer */
-footer {
-    background-color: var(--color-primary);
+.a-white {
     color: var(--color-secondary);
 }
 
-footer .top {
-    border-bottom: 1px solid var(--color-contrast);
+.i-black {
+    color: var(--color-primary);
+}
+
+.i-white {
+    color: var(--color-secondary);
+}
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+.color-contrast {
+    color: var(--color-contrast);
+}
+
+/* :hover */
+
+nav .a-white:hover {
+    text-decoration: underline;
+}
+
+footer .a-white:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--color-primary);
+}
+
+.button:hover {
+    color: var(--color-contrast);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, .2);
+}
+
+.button i:hover {
+    color: var(--color-contrast);
+}
+
+.button-black:hover {
+    box-shadow: 0 8px 5px rgba(0, 0, 0, .2);
+}
+
+.button-contrast:hover {
+    box-shadow: 0 8px 5px rgba(0, 0, 0, .2);
+}
+
+/* links bottons */
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
 
-/* utility */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    font-size: 1em;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.small-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 70px 10px;
-    text-align: center;
-    font-size: 1em;
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
+
 
 .button {
     background-color: var(--color-secondary);
@@ -149,31 +151,158 @@ footer .top {
     border-radius: 20px;
 }
 
-.i-black {
-    color: var(--color-primary);
-}
+/* header */
 
-.i-white {
+header {
+    background-color: var(--color-header-bg);
     color: var(--color-secondary);
 }
 
-a {
-    text-decoration: none;
+#jumbotron {
+    background-image: url(../img/img/jumbo.png);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
 }
 
-ul li {
+header p,
+nav {
+    padding-bottom: 10px;
+}
+
+.botheader {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header ul li {
+    padding: 10px 20px;
+}
+
+/* main */
+
+.section-bg {
+    background-color: var(--color-section-bg);
+}
+
+.left {
+    width: 60%;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    width: 40%;
+    padding: 3%;
+}
+
+
+.inverted-wave {
+    width: 100%;
+}
+
+.inverted-wave img {
+    width: 100%;
+    filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
+    transform: rotate(180deg);
+}
+
+.wave {
+    width: 100%;
+    line-height: 0;
+}
+
+.wave img {
+    width: 100%;
+    filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
+    display: block;
+    vertical-align: bottom;
+}
+
+#calltoaction {
+    background-image: url(../img/img/stars.svg);
+    width: fit-content;
+    margin: 10px auto auto;
+    padding: 23px 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.small-container-bottom img {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+footer .top {
+    border-bottom: 1px solid var(--color-contrast);
+}
+
+
+img[alt="ita-flag"] {
+    width: 20px
+}
+
+
+#socials-items i {
+    padding: 5px;
+}
+
+footer ul strong:first-child {
+    color: var(--color-contrast);
+}
+
+footer li,
+h3 {
     padding: 10px;
 }
 
-.a-white {
-    color: var(--color-secondary);
+footer h3 {
+    font-size: 2em;
 }
 
-.a-black {
-    color: var(--color-primary);
+/* utility */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 1em;
+}
+
+.small-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 150px 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.small-container-bottom {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+nav,
+.bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 /* utility flex */
+
 .d-flex {
     display: flex;
 }
