@@ -22,6 +22,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--color-secondary);
     color: var(--color-primary);
+    position: relative;
 }
 
 h1,
@@ -155,7 +156,7 @@ footer .a-white:hover {
     border-radius: 20px;
     display: inline-block;
     transition: all 0.5s;
-    
+
 }
 
 .button-black {
@@ -166,6 +167,46 @@ footer .a-white:hover {
     display: inline-block;
     transition: all 0.5s;
 }
+
+#chat {
+    position: absolute;
+    width: 270px;
+    right: 350px;
+    top: 550px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards 5s;    
+}
+#clyde {
+    position: absolute;
+    right: 100px;
+    top: 450px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards 4s;    
+} 
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+  
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      display: block;
+    }
+  
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
 
 /* header */
 
@@ -205,6 +246,29 @@ header ul li {
 
 .left {
     width: 60%;
+    position: relative;
+    animation: identifier 5s 1;
+}
+
+@keyframes identifier {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    30% {
+        top: 50px;
+    }
+
+    68%,
+    72% {
+        left: 50px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0%;
+    }
 }
 
 .left img {
@@ -214,8 +278,22 @@ header ul li {
 .right {
     width: 40%;
     padding: 3%;
+    position: relative;
+    animation: slidein 2s 1;
 }
 
+@keyframes slidein {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+
+    to {
+       left: 0%;
+       opacity: 1;
+       
+    }
+}
 
 .inverted-wave {
     width: 100%;
@@ -308,7 +386,26 @@ footer h3 {
     font-size: 1em;
     line-height: 1.5;
     word-wrap: break-word;
+    position: relative;
+    animation: mymove 5s 1;
+}
 
+@keyframes mymove {
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: 200px;
+    }
+
+    75% {
+        top: 10px
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
 .small-container-bottom {
@@ -319,7 +416,8 @@ footer h3 {
     font-size: 1em;
     line-height: 1.5;
     word-wrap: break-word;
-
+    position: relative;
+    animation: mymove 5s 1;
 }
 
 .small-container-bottom-cta {
