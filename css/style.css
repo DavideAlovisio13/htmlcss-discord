@@ -107,6 +107,15 @@ footer .a-white:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    position: relative;
+}
+
+.dropbtn::after {
+    content: '\032C';
+    position: absolute;
+    left: 62px;
+    top: 5px;
+
 }
 
 .dropdown {
@@ -136,12 +145,17 @@ footer .a-white:hover {
     background-color: var(--color-secondary);
     padding: 10px 12px;
     border-radius: 20px;
+    display: inline-block;
+    transition: all 0.5s;
 }
 
 .button-contrast {
     background-color: var(--color-contrast);
     padding: 10px 12px;
     border-radius: 20px;
+    display: inline-block;
+    transition: all 0.5s;
+    
 }
 
 .button-black {
@@ -149,6 +163,8 @@ footer .a-white:hover {
     padding: 10px 12px;
     margin-left: 15px;
     border-radius: 20px;
+    display: inline-block;
+    transition: all 0.5s;
 }
 
 /* header */
@@ -160,7 +176,7 @@ header {
 
 #jumbotron {
     background-image: url(../img/img/jumbo.png);
-    min-height: 500px;
+    min-height: 600px;
     background-size: cover;
     background-position: center;
 }
@@ -174,6 +190,7 @@ nav {
     margin: auto;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 header ul li {
@@ -191,7 +208,7 @@ header ul li {
 }
 
 .left img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .right {
@@ -268,13 +285,19 @@ footer h3 {
     font-size: 2em;
 }
 
+#last-btn {
+    color: var(--color-secondary);
+}
+
 /* utility */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px 15px;
     font-size: 1em;
+    line-height: 1.5;
+    word-wrap: break-word;
 }
 
 .small-container {
@@ -283,6 +306,9 @@ footer h3 {
     padding: 150px 20px;
     text-align: center;
     font-size: 1em;
+    line-height: 1.5;
+    word-wrap: break-word;
+
 }
 
 .small-container-bottom {
@@ -291,6 +317,9 @@ footer h3 {
     padding: 50px 20px;
     text-align: center;
     font-size: 1em;
+    line-height: 1.5;
+    word-wrap: break-word;
+
 }
 
 .small-container-bottom-cta {
@@ -299,6 +328,7 @@ footer h3 {
     padding: 90px;
     text-align: center;
     font-size: 1em;
+    word-wrap: break-word;
 }
 
 nav,
@@ -325,4 +355,8 @@ nav,
 .align-items-center {
     align-items: center;
     align-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }

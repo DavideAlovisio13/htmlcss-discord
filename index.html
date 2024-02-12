@@ -21,9 +21,9 @@
 <body>
     <!-- header -->
     <header>
-        <nav class=" d-flex space-between align-items-center">
+        <nav class=" d-flex space-between align-items-center flex-wrap">
             <img src="./img/img/logo.svg" alt="Discord logo">
-            <ul class="d-flex">
+            <ul class="d-flex flex-wrap">
                 <li><a href="#" class="a-white">Scarica</a></li>
                 <li><a href="#" class="a-white">Perchè Discord</a></li>
                 <li><a href="#" class="a-white">Nitro</a></li>
@@ -33,7 +33,7 @@
             <a href="#" class="button a-black">Accedi</a>
         </nav>
         <div id="jumbotron">
-            <div class="small-container">
+            <div class="small-container flex-wrap">
                 <h1>Il tuo posto per parlare</h1>
                 <p>
                     Che tu faccia parte di un cub scolastico, gruppo di gamer, comunità artistica mondiale, o
@@ -52,12 +52,12 @@
     <!-- main -->
     <main>
         <!-- 1 section -->
-        <section id="feature">
-            <div class="container d-flex">
-                <div class="left">
+        <section id="study-group" class="flex-wrap">
+            <div class="container flex-wrap d-flex">
+                <div class="left flex-wrap">
                     <img src="img/img/item1.svg" alt="feature">
                 </div>
-                <div class="right align-items-center">
+                <div class="right flex-wrap align-items-center">
                     <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
                     <p>
                         I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o
@@ -68,12 +68,12 @@
             <div class="wave"><img src="./img/img/wave.svg" alt="wave"></div>
         </section>
         <!-- 2 section -->
-        <section id="channel" class="section-bg">
-            <div class="container d-flex row-reverse">
-                <div class="left">
+        <section id="just-chillin" class="section-bg flex-wrap">
+            <div class="container d-flex flex-wrap row-reverse">
+                <div class="left flex-wrap">
                     <img src="img/img/item2.svg" alt="feature">
                 </div>
-                <div class="right align-items-center">
+                <div class="right flex-wrap align-items-center">
                     <h2>Dove trovarsi è facile</h2>
                     <p>
                         Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che
@@ -83,13 +83,13 @@
             </div>
         </section>
         <!-- 3 section -->
-        <section id="community">
+        <section id="coach">
             <div class="inverted-wave"><img src="./img/img/wave.svg" alt="wave"></div>
-            <div class="container d-flex">
-                <div class="left">
+            <div class="container flex-wrap d-flex">
+                <div class="left flex-wrap">
                     <img src="img/img/item3.svg" alt="community">
                 </div>
-                <div class="right align-items-center">
+                <div class="right flex-wrap align-items-center">
                     <h2>
                         Da pochi a fandom
                     </h2>
@@ -103,7 +103,7 @@
             <div class="wave"><img src="./img/img/wave.svg" alt="wave"></div>
         </section>
         <!-- 4 section -->
-        <section id="technology" class="section-bg">
+        <section id="keep-in-touch" class="section-bg flex-wrap">
             <div class="small-container-bottom">
                 <h2>Tecnologia affidabile per tenersi in contatto</h2>
                 <p>
@@ -115,7 +115,7 @@
             </div>
         </section>
         <!-- 5 section -->
-        <section id="call-to-action" class="section-bg">
+        <section id="call-to-action" class="section-bg flex-wrap">
             <div class="small-container-bottom-cta">
                 <div id="calltoaction">
                     <h3>Pronto a iniziare la tua avventura?</h3>
@@ -126,10 +126,10 @@
         </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="flex-wrap">
         <!-- top footer -->
         <div class="top container d-flex space-between">
-            <div id="ul-left">
+            <div id="ul-left flex-wrap">
                 <h3 class="color-contrast">Il tuo posto per parlare</h3>
                 <ul>
                     <li>
@@ -153,7 +153,7 @@
             </div>
             <div id="ul-right1">
                 <ul>
-                    <li><a href="#"><strong>Prodotto</strong></a></li>
+                    <li><strong>Prodotto</strong></li>
                     <li><a href="#" class="a-white">Scarica</a></li>
                     <li><a href="#" class="a-white">Perchè Discord</a></li>
                     <li><a href="#" class="a-white">Nitro</a></li>
@@ -163,7 +163,7 @@
             </div>
             <div id="ul-right2">
                 <ul>
-                    <li><a href="#"><strong>Compagnia</strong></a></li>
+                    <li><strong>Compagnia</strong></li>
                     <li><a href="#" class="a-white">Chi siamo</a></li>
                     <li><a href="#" class="a-white">Lavora con noi</a></li>
                     <li><a href="#" class="a-white">Marchio</a></li>
@@ -173,7 +173,7 @@
             </div>
             <div id="ul-right3">
                 <ul>
-                    <li><a href="#"><strong>Risorse</strong></a></li>
+                    <li><strong>Risorse</strong></li>
                     <li><a href="#" class="a-white">Scarica</a></li>
                     <li><a href="#" class="a-white">Perchè Discord</a></li>
                     <li><a href="#" class="a-white">Nitro</a></li>
@@ -188,7 +188,7 @@
             </div>
             <div id="ul-right4">
                 <ul>
-                    <li><a href="#"><strong>Norme</strong></a></li>
+                    <li><strong>Norme</strong></li>
                     <li><a href="#" class="a-white">Scarica</a></li>
                     <li><a href="#" class="a-white">Perchè Discord</a></li>
                     <li><a href="#" class="a-white">Nitro</a></li>
@@ -201,7 +201,7 @@
         <!-- bottom footer -->
         <div class="bottom-container d-flex space-between align-items-center">
             <img src="./img/img/logo.svg" alt="Discord logo">
-            <a href="#" class="button-contrast a-white">Registrati</a>
+            <a href="#" class="button-contrast" id="last-btn">Registrati</a>
         </div>
     </footer>
 
