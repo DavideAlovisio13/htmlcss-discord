@@ -108,7 +108,6 @@ footer .a-white:hover {
 
 .left img:active {
     animation: shake 0.5s forwards ;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes shake {
