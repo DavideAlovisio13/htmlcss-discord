@@ -218,7 +218,6 @@ header ul li {
 .wave img {
     width: 100%;
     filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
-    display: block;
     vertical-align: bottom;
 }
 
