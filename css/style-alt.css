@@ -104,30 +104,15 @@ footer .a-white:hover {
 .left img:hover {
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
     transition: all .3s cubic-bezier(0, 0, .5, 1);
+    animation: pulse 0.8s;
 }
 
-.left img:active {
-    animation: shake 0.5s forwards;
-}
 
-@keyframes shake {
-    0% {
-        margin-left: 0rem;
+@keyframes pulse {
+    50% {
+      transform: scale(1.2);
     }
-
-    25% {
-        margin-left: 0.5rem;
-    }
-
-    75% {
-        margin-left: -0.5rem;
-    }
-
-    100% {
-        margin-left: 0rem;
-    }
-}
-
+  }
 
 /* links bottons */
 
@@ -216,6 +201,7 @@ footer .a-white:hover {
     opacity: 0;
     animation: fade-in 1s ease-in forwards 4s;
 }
+
 
 @keyframes fade-in {
     0% {
