@@ -293,6 +293,14 @@ footer h3 {
     font-size: 1em;
 }
 
+.small-container-bottom-cta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 90px;
+    text-align: center;
+    font-size: 1em;
+}
+
 nav,
 .bottom-container {
     max-width: 1200px;
