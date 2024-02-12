@@ -16,11 +16,13 @@ ul {
     --color-header-bg: #255ee9;
     --color-section-bg: #f6f6f6;
     --color-contrast: #7289DA;
+    --color-bg-alt: #7DE5CD;
+    --color-bgmain-alt: #c5589a62;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--color-secondary);
+    background-color: var(--color-bgmain-alt);
     color: var(--color-primary);
     position: relative;
 }
@@ -99,6 +101,35 @@ footer .a-white:hover {
     box-shadow: 0 8px 5px rgba(0, 0, 0, .2);
 }
 
+.left img:hover {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
+    transition: all .3s cubic-bezier(0, 0, .5, 1);
+}
+
+.left img:active {
+    animation: shake 0.5s forwards ;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.5rem;
+    }
+
+    75% {
+        margin-left: -0.5rem;
+    }
+
+    100% {
+        margin-left: 0rem;
+    }
+}
+
+
 /* links bottons */
 
 .dropbtn {
@@ -176,39 +207,40 @@ footer .a-white:hover {
     right: 350px;
     top: 550px;
     opacity: 0;
-    animation: fade-in 1s ease-in forwards 5s;    
+    animation: fade-in 1s ease-in forwards 5s;
 }
+
 #clyde {
     position: absolute;
     right: 100px;
     top: 450px;
     opacity: 0;
-    animation: fade-in 1s ease-in forwards 4s;    
-} 
+    animation: fade-in 1s ease-in forwards 4s;
+}
 
 @keyframes fade-in {
     0% {
-      opacity: 0;
-      display: none;
+        opacity: 0;
+        display: none;
     }
-  
+
     100% {
-      opacity: 1;
-      display: block;
+        opacity: 1;
+        display: block;
     }
-  }
-  
-  @keyframes fade-out {
+}
+
+@keyframes fade-out {
     0% {
-      opacity: 1;
-      display: block;
+        opacity: 1;
+        display: block;
     }
-  
+
     100% {
-      opacity: 0;
-      display: none;
+        opacity: 0;
+        display: none;
     }
-  }
+}
 
 /* header */
 
@@ -243,7 +275,7 @@ header ul li {
 /* main */
 
 .section-bg {
-    background-color: var(--color-section-bg);
+    background-color: var(--color-bg-alt);
 }
 
 .left {
@@ -277,6 +309,7 @@ header ul li {
     max-width: 100%;
 }
 
+
 .right {
     width: 40%;
     padding: 3%;
@@ -291,9 +324,9 @@ header ul li {
     }
 
     to {
-       left: 0%;
-       opacity: 1;
-       
+        left: 0%;
+        opacity: 1;
+
     }
 }
 
@@ -303,7 +336,7 @@ header ul li {
 
 .inverted-wave img {
     width: 100%;
-    filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
+    filter: invert(95%) sepia(11%) saturate(1629%) hue-rotate(94deg) brightness(95%) contrast(88%);
     transform: rotate(180deg);
 }
 
@@ -314,7 +347,7 @@ header ul li {
 
 .wave img {
     width: 100%;
-    filter: invert(100%) sepia(11%) saturate(50%) hue-rotate(224deg) brightness(111%) contrast(93%);
+    filter: invert(95%) sepia(11%) saturate(1629%) hue-rotate(94deg) brightness(95%) contrast(88%);
     vertical-align: bottom;
 }
 
